@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		D54CAD4724ABA78F009F20FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54CAD4524ABA78F009F20FA /* Main.storyboard */; };
 		D54CAD4924ABA790009F20FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D54CAD4824ABA790009F20FA /* Assets.xcassets */; };
 		D54CAD4C24ABA790009F20FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54CAD4A24ABA790009F20FA /* LaunchScreen.storyboard */; };
+		D5A5604224ABAB33001A4E8D /* swiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = D5A5604124ABAB33001A4E8D /* swiftLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5A5604224ABAB33001A4E8D /* swiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = anotherSwiftClient;
+			packageProductDependencies = (
+				D5A5604124ABAB33001A4E8D /* swiftLibrary */,
+			);
 			productName = anotherSwiftClient;
 			productReference = D54CAD3C24ABA78F009F20FA /* anotherSwiftClient.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +115,9 @@
 				Base,
 			);
 			mainGroup = D54CAD3324ABA78F009F20FA;
+			packageReferences = (
+				D5A5604024ABAB33001A4E8D /* XCRemoteSwiftPackageReference "swiftPackages" */,
+			);
 			productRefGroup = D54CAD3D24ABA78F009F20FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D5A5604024ABAB33001A4E8D /* XCRemoteSwiftPackageReference "swiftPackages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kirviz/swiftPackages";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D5A5604124ABAB33001A4E8D /* swiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5A5604024ABAB33001A4E8D /* XCRemoteSwiftPackageReference "swiftPackages" */;
+			productName = swiftLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D54CAD3424ABA78F009F20FA /* Project object */;
 }
