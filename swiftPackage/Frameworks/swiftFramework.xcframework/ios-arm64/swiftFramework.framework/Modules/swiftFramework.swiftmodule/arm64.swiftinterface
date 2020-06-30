@@ -4,7 +4,8 @@
 import Foundation
 import Swift
 @_exported import swiftFramework
-@_hasMissingDesignatedInitializers public class FramyS {
+public class FramyS {
   final public let name: Swift.String
+  public init(name: Swift.String)
   @objc deinit
 }

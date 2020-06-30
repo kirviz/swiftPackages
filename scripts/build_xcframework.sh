@@ -11,4 +11,6 @@ xcodebuild archive -scheme "swiftFramework" -destination "generic/platform=iOS" 
 # assemble into xcframework
 xcodebuild -create-xcframework -framework output/iphone.xcarchive/Products/Library/Frameworks/swiftFramework.framework -framework output/simulator.xcarchive/Products/Library/Frameworks/swiftFramework.framework -output output/swiftFramework.xcframework
 
+rm -rf ../swiftPackage/Frameworks/swiftFramework.xcframework
+
 cp -R output/swiftFramework.xcframework ../swiftPackage/Frameworks/swiftFramework.xcframework

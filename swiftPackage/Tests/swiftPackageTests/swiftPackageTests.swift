@@ -1,12 +1,12 @@
 import XCTest
-@testable import swiftPackage
+import swiftFramework
 
 final class swiftPackageTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(swiftPackage().text, "Hello, World!")
+        XCTAssertEqual(FramyS(name:"testName").name, "testName")
     }
 
     static var allTests = [
