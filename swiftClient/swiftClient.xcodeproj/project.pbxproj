@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5804D1C24ABA18900074DAE /* swiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = D5804D1B24ABA18900074DAE /* swiftLibrary */; };
 		D59E422224AB384900BAC710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59E422124AB384900BAC710 /* AppDelegate.swift */; };
 		D59E422424AB384900BAC710 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59E422324AB384900BAC710 /* SceneDelegate.swift */; };
 		D59E422624AB384900BAC710 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59E422524AB384900BAC710 /* ViewController.swift */; };
 		D59E422924AB384900BAC710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59E422724AB384900BAC710 /* Main.storyboard */; };
 		D59E422B24AB384A00BAC710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D59E422A24AB384A00BAC710 /* Assets.xcassets */; };
 		D59E422E24AB384A00BAC710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59E422C24AB384A00BAC710 /* LaunchScreen.storyboard */; };
-		D59E423D24AB94A200BAC710 /* swiftFramework in Frameworks */ = {isa = PBXBuildFile; productRef = D59E423C24AB94A200BAC710 /* swiftFramework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D59E423D24AB94A200BAC710 /* swiftFramework in Frameworks */,
+				D5804D1C24ABA18900074DAE /* swiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			);
 			name = swiftClient;
 			packageProductDependencies = (
-				D59E423C24AB94A200BAC710 /* swiftFramework */,
+				D5804D1B24ABA18900074DAE /* swiftLibrary */,
 			);
 			productName = swiftClient;
 			productReference = D59E421E24AB384900BAC710 /* swiftClient.app */;
@@ -360,9 +360,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D59E423C24AB94A200BAC710 /* swiftFramework */ = {
+		D5804D1B24ABA18900074DAE /* swiftLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = swiftFramework;
+			productName = swiftLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
