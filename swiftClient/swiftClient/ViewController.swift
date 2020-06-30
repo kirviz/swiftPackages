@@ -6,12 +6,15 @@
 //
 
 import UIKit
+import swiftFramework
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let framy = FramyS(name: "kuku")
+        print("\(framy.name)")
     }
 
 
