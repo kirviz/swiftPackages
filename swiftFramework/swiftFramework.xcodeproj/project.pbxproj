@@ -16,6 +16,7 @@
 		D51B9CCB24AB3606002C2B38 /* swiftFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = swiftFramework.h; sourceTree = "<group>"; };
 		D51B9CCC24AB3606002C2B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D51B9CD324AB3618002C2B38 /* FramyS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramyS.swift; sourceTree = "<group>"; };
+		D59E423A24AB3A8800BAC710 /* swiftPackage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = swiftPackage; path = ../swiftPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +33,7 @@
 		D51B9CBE24AB3606002C2B38 = {
 			isa = PBXGroup;
 			children = (
+				D59E423A24AB3A8800BAC710 /* swiftPackage */,
 				D51B9CCA24AB3606002C2B38 /* swiftFramework */,
 				D51B9CC924AB3606002C2B38 /* Products */,
 			);
