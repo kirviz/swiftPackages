@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "swiftPackage",
+        "repositoryURL": "https://github.com/kirviz/swiftPackages",
+        "state": {
+          "branch": "master",
+          "revision": "e98f9ed26e10a732cda7b407aa07f01c7bd6d3a6",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
