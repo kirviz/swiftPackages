@@ -14,6 +14,7 @@
 		D54CAD4924ABA790009F20FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D54CAD4824ABA790009F20FA /* Assets.xcassets */; };
 		D54CAD4C24ABA790009F20FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54CAD4A24ABA790009F20FA /* LaunchScreen.storyboard */; };
 		D5A5604224ABAB33001A4E8D /* swiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = D5A5604124ABAB33001A4E8D /* swiftLibrary */; };
+		D5E2942824AD4AFE00B1B84C /* objcLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = D5E2942724AD4AFE00B1B84C /* objcLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E2942824AD4AFE00B1B84C /* objcLibrary in Frameworks */,
 				D5A5604224ABAB33001A4E8D /* swiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,6 +46,7 @@
 			children = (
 				D54CAD3E24ABA78F009F20FA /* anotherSwiftClient */,
 				D54CAD3D24ABA78F009F20FA /* Products */,
+				D5E2942624AD4AFE00B1B84C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +72,13 @@
 			path = anotherSwiftClient;
 			sourceTree = "<group>";
 		};
+		D5E2942624AD4AFE00B1B84C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,6 +97,7 @@
 			name = anotherSwiftClient;
 			packageProductDependencies = (
 				D5A5604124ABAB33001A4E8D /* swiftLibrary */,
+				D5E2942724AD4AFE00B1B84C /* objcLibrary */,
 			);
 			productName = anotherSwiftClient;
 			productReference = D54CAD3C24ABA78F009F20FA /* anotherSwiftClient.app */;
@@ -366,6 +377,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D5A5604024ABAB33001A4E8D /* XCRemoteSwiftPackageReference "swiftPackages" */;
 			productName = swiftLibrary;
+		};
+		D5E2942724AD4AFE00B1B84C /* objcLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5A5604024ABAB33001A4E8D /* XCRemoteSwiftPackageReference "swiftPackages" */;
+			productName = objcLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
