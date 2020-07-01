@@ -10,6 +10,9 @@ let package = Package(
         .library(
             name: "swiftLibrary",
             targets: ["swiftFramework"]),
+        .library(
+            name: "objcLibrary",
+            targets: ["objcFramework"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -21,6 +24,10 @@ let package = Package(
         .binaryTarget(
             name: "swiftFramework",
             path: "Frameworks/swiftFramework.xcframework"
+        ),
+        .binaryTarget(
+            name: "objcFramework",
+            path: "Frameworks/objcFramework.xcframework"
         ),
         .testTarget(
             name: "swiftPackageTests",

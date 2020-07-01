@@ -14,23 +14,8 @@
 		D59E422924AB384900BAC710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59E422724AB384900BAC710 /* Main.storyboard */; };
 		D59E422B24AB384A00BAC710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D59E422A24AB384A00BAC710 /* Assets.xcassets */; };
 		D59E422E24AB384A00BAC710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59E422C24AB384A00BAC710 /* LaunchScreen.storyboard */; };
-		D5E2942124AD45FB00B1B84C /* objcFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E2942024AD45FB00B1B84C /* objcFramework.xcframework */; };
-		D5E2942224AD45FB00B1B84C /* objcFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D5E2942024AD45FB00B1B84C /* objcFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D5E2942524AD476C00B1B84C /* objcLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = D5E2942424AD476C00B1B84C /* objcLibrary */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		D5E2942324AD45FB00B1B84C /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				D5E2942224AD45FB00B1B84C /* objcFramework.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D59E421E24AB384900BAC710 /* swiftClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5E2942124AD45FB00B1B84C /* objcFramework.xcframework in Frameworks */,
+				D5E2942524AD476C00B1B84C /* objcLibrary in Frameworks */,
 				D5804D1C24ABA18900074DAE /* swiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,7 +95,6 @@
 				D59E421A24AB384900BAC710 /* Sources */,
 				D59E421B24AB384900BAC710 /* Frameworks */,
 				D59E421C24AB384900BAC710 /* Resources */,
-				D5E2942324AD45FB00B1B84C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -119,6 +103,7 @@
 			name = swiftClient;
 			packageProductDependencies = (
 				D5804D1B24ABA18900074DAE /* swiftLibrary */,
+				D5E2942424AD476C00B1B84C /* objcLibrary */,
 			);
 			productName = swiftClient;
 			productReference = D59E421E24AB384900BAC710 /* swiftClient.app */;
@@ -383,6 +368,10 @@
 		D5804D1B24ABA18900074DAE /* swiftLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = swiftLibrary;
+		};
+		D5E2942424AD476C00B1B84C /* objcLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = objcLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
