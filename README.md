@@ -8,8 +8,12 @@
 ## Try
 ```
 #import swiftFramework
-let framy = FramyS(name: "Hell😈 world")
-print("\(framy.name)")
+let framy1 = FramyS(name: "Hell😈 swift")
+print("\(framy1.name)")
+
+#import objcFramework
+let framy2 = FramyO(name: "Hell😈 objc")
+print("\(framy2.name)")
 ```
 
 You can see I played arround with names in Package.swift to figure out which name has what effect, so we now have swiftPackage, swiftLibrary and swiftFramework to make it confusing 😇
@@ -21,3 +25,4 @@ You can see I played arround with names in Package.swift to figure out which nam
 - swiftClient imports swiftPackage directly in order to get the framework locally
 - anotherSwiftCient uses the real deal package through URL 
 - (root) the real deal package, i.e. distributes the framework through URL
+- objcFramework is like swiftFramework and objcClient is like anotherSwiftClient
